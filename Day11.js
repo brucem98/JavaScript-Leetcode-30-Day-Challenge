@@ -1,0 +1,8 @@
+// https://leetcode.com/problems/curry/
+
+async function sleep(millis) {
+  function callback(resolve, reject) {
+    setTimeout(resolve, millis);
+  }
+  return new Promise(callback);
+}
